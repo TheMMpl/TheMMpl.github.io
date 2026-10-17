@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Investigating introspection in language models, a thesis by TheMMpl.">
+  <title>Investigating Introspection in Language Models</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f2efe8;
+      color: #20251f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      background-image: linear-gradient(135deg, rgba(255,255,255,.55), transparent 55%), repeating-linear-gradient(0deg, transparent 0 39px, rgba(50,65,52,.045) 39px 40px);
+    }
+
+    main {
+      width: min(100%, 760px);
+      padding: clamp(2rem, 7vw, 5rem);
+      border-top: 5px solid #bf5b3d;
+      background: #fbfaf6;
+      box-shadow: 0 24px 70px rgba(39, 44, 36, .12);
+      animation: appear .65s ease-out both;
+    }
+
+    .eyebrow {
+      margin: 0 0 2rem;
+      color: #a14831;
+      font: 700 .75rem/1.2 Arial, sans-serif;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      font-weight: 500;
+      line-height: 1.02;
+    }
+
+    .summary {
+      max-width: 42ch;
+      margin: 1.5rem 0 2.5rem;
+      color: #555c53;
+      font-size: 1.15rem;
+      line-height: 1.65;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+      font: 700 .95rem/1.3 Arial, sans-serif;
+    }
+
+    .primary {
+      display: inline-block;
+      padding: .95rem 1.2rem;
+      background: #283e34;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .primary:hover { background: #a14831; }
+
+    .download { color: #283e34; }
+    .download:hover { color: #a14831; }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Thesis</p>
+    <h1>Investigating introspection in language models</h1>
+    <p class="summary"></p>
+    <div class="actions">
+      <a class="primary" href="https://github.com/TheMMpl/mech_interp/blob/main/Investigating%20introspection%20in%20language%20models.pdf">Read the thesis</a>
+      <a class="download" href="https://github.com/TheMMpl/mech_interp/raw/refs/heads/main/Investigating%20introspection%20in%20language%20models.pdf">Download PDF</a>
+    </div>
+  </main>
+</body>
+</html>
